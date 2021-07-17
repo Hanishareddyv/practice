@@ -1,0 +1,2 @@
+gud evng
+devops practice
