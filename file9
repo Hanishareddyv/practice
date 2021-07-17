@@ -163,14 +163,8 @@ git l
 
 git log --oneline
 git config --global alias.l1 "log --oneline"
-git l1
-
-git config --list
-git config --global alias.cl "config --list"
-git cl
-
-git commit -m "Test commit"
-git config --global alias.cm "commit -m "Test commit""
+git
+git config --glouyjjyujyujuyjbal alias.cm "commit -m "Test commit""
 git cm
 
 git config --global --unset alias.cl
@@ -188,7 +182,7 @@ CONFLICT's
 ==========
 
 
-
+ytjyutujhyjyjyjy
 ----------
 git reset head file-name  (staging to workspace)
 
@@ -204,9 +198,9 @@ git tag
 git tag tag-name
 git show tag-name
 git tag -d tag-name
-
-git tag tag-name cid
-git tag
+yhthtyhtyjhyujf
+git tag tag-name ciythd
+git tagtrghtyhtyhtd
 git checkout tag-name
 git checkout main
 
@@ -223,7 +217,7 @@ git commit --amend -m "label"
 
 Revert
 =======
-git revert cid
+cfdvdfgvtrgrgit revert cid
 
 diff
 =====
