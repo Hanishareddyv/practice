@@ -1,0 +1,278 @@
+git init
+
+git config --global user.name "Polarapu Prasad"
+git config --global user.email "devopstraining2015@gmail.com"
+
+git config --list
+
+============================
+
+touch file1
+ls
+ls -a
+git status
+git add file1
+git status
+git commit -m "sample commit from prasad" file1
+git status
+git log
+git show cid
+
+touch file3 file4 file5
+git status
+git add file3 file4 file5
+or
+git add *
+or
+git add .
+or
+git add -A
+git status
+git commit -m "test commit2"
+git status
+git log
+git show cid
+
+=================================
+git clone https://github.com/polarapu/batch69.git
+ls
+cd batch69
+touch prasad
+git status
+git add prasad
+git status
+git commit -m "test commit" prasad
+git status
+git log
+git push
+
+---------------------------------------------------
+git clone https://github.com/polarapu/batch69.git
+ls
+cd batch69
+touch name
+git status
+git add name
+git status
+git commit -m "test commit" name
+git status
+git log
+git push
+git pull --rebase
+git push
+-------------------------------------------------------
+
+mkdir prasad-dir
+cd prasad-dir
+touch a1 a2 a3
+cd ..
+git add *
+git commit -m "dir commit"
+git push
+
+-------------------------
+Touch, Cat, Vi
+---------------
+Touch
+=====
+touch file1
+ls
+touch file2 file3 file4
+
+Cat
+===
+cat > file5
+....
+....
+ctrl+d
+
+cat file5
+
+cat >> file5
+...
+...
+ctrl+d
+
+Vi
+==
+vi file6
+esc i 
+.....
+.....
+.....
+esc :w
+esc :q
+or
+esc :wq!
+
+------------------------
+git log
+git log -5
+git log --oneline
+git log --oneline -2
+git log --author=Ravi
+git log --author=Ravi -2
+git log --author=Ravi --oneline
+git log --author=Ravi --oneline -3
+
+-------------------------------------
+git log --since=yy-mm-dd
+or
+git log --after=yy-mm-dd
+
+git log --until=yy-mm-dd
+or
+git log --before=yy-mm-dd
+
+git log --after=yy-mm-dd --before=yy-mm-dd
+or
+git log --since=yy-mm-dd --until=yy-mm-dd
+
+git log --after="2021-07-12 08:00" --before="2021-07-12 18:00"
+git log --grep="msg"
+git log -- file-name
+
+
+
+git branch
+git branch release1
+git branch
+git checkout release1
+or
+git checkout -b release2
+
+git merge branch-name
+
+git branch -d release1
+
+git push origin release1
+or
+git push https://github.com/polarapu/batch69.git release2
+
+git push origin -d release1
+
+Alias
+=====
+git status
+git config --global alias.s "status"
+git s
+
+git log
+git config --global alias.l "log"
+git l
+
+git log --oneline
+git config --global alias.l1 "log --oneline"
+git l1
+
+git config --list
+git config --global alias.cl "config --list"
+git cl
+
+git commit -m "Test commit"
+git config --global alias.cm "commit -m "Test commit""
+git cm
+
+git config --global --unset alias.cl
+git config --global --unset user.name
+
+=======================================================
+Rebase
+------
+
+git rebase branch-name
+
+git pull --rebase
+
+CONFLICT's
+==========
+
+
+
+----------
+git reset head file-name  (staging to workspace)
+
+git reset --soft cid  (n-1)  (local to staging)
+
+git reset --mixed cid  (local to workspace)
+
+git reset --hard cid  (to delete commit and commit data)
+------------------------------------------------------------------
+TAG's
+=====
+git tag
+git tag tag-name
+git show tag-name
+git tag -d tag-name
+
+git tag tag-name cid
+git tag
+git checkout tag-name
+git checkout main
+
+git push origin T-1.0
+or
+git push --tags (all tags)
+
+git push origin -d tag-name
+
+
+Amend
+=====
+git commit --amend -m "label"
+
+Revert
+=======
+git revert cid
+
+diff
+=====
+git diff file-name
+git diff main release1
+
+
+git cherrypick
+==============
+git cherry-pick cid
+
+.gitignore
+==========
+
+
+git fetch
+=========
+git pull = git fetch + git merge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
