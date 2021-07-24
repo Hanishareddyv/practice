@@ -1,0 +1,2 @@
+<%-- Success Messages --%>
+<stripes:messages/>
